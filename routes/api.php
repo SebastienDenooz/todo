@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('/task', 'TaskController', [
+    'except' => ['edit', 'show', 'create']
+])->middleware('auth:api');
+Route::resource('/status', 'StatusController', [
+    'except' => ['create', 'update', 'destroy', 'edit', 'show', 'store']
+])->middleware('auth:api');

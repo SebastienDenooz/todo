@@ -94,6 +94,8 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+            <div id="app"></div>
+            <script type="text/javascript" src="/js/app.js"></script>
         </div>
     </body>
 </html>
