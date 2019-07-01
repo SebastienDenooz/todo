@@ -7,9 +7,9 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import VueRouter from 'vue-router';
-import App from './Components/App.vue';
-import LoginComponent from './Components/Login.vue';
-import SecuredComponent from './Components/Secured.vue';
+import App from './components/App';
+import LoginComponent from './components/Login.vue';
+import SecuredComponent from './components/Secured.vue';
 
 /**
  * The following block of code may be used to automatically register your
